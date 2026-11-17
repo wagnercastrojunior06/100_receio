@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#527a59">
+  <meta name="description" content="Guarde, organize e compartilhe suas receitas favoritas no 100 Receio.">
+  <title>100 Receio — seu caderno de receitas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./" aria-label="100 Receio, início"><span class="brand-mark" aria-hidden="true">100</span><span>Receio</span></a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="./" data-nav="home">Início</a>
+        <a href="./?view=mine" data-nav="mine" hidden>Minhas receitas</a>
+        <a href="./?view=favorites" data-nav="favorites" hidden>Favoritos</a>
+      </nav>
+      <div class="header-actions" id="header-actions"><button class="button button-secondary" data-action="auth">Entrar</button></div>
+    </div>
+  </header>
+  <main id="main-content" class="page-shell" tabindex="-1">
+    <section id="app" aria-live="polite" aria-busy="true"><div class="loading-state"><span class="spinner" aria-hidden="true"></span><p>Preparando seu caderno…</p></div></section>
+  </main>
+  <footer class="site-footer"><p>100 Receio <span aria-hidden="true">·</span> Receitas feitas para compartilhar.</p></footer>
+  <div id="dialog-root"></div>
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

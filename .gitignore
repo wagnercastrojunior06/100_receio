@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+node_modules/
+npm-debug.log*
+.render/
+.secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+*service-account*.json
+images/personal-finance-design-system.*
